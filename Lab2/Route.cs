@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Lab1 {
+
+namespace Lab2 {
     public class Route {
 
-        public int RouteNumber { get; set; } 
-        public string Name { get; private set; }
+        public int RouteNumber { get; set; }
+        public string Name { get; set; }
         public TrolleybusStop InitialStop { get; set; }
         public TrolleybusStop LastStop { get; set; }
         public int NumOfTrolleybus { get; set; }
-        public DateTime? JourneyTime { get; set; }
+        public DateTime JourneyTime { get; set; }
 
         public List<int> InventoryNumsOfTrolleybusOnRoute { get; set; }
 
+        public Route() { }
         public Route(int routeNumber, TrolleybusStop initialStop, TrolleybusStop lastStop, int numOfTrolleybus, int journeyTimeInMinutes, List<int> inventorynumsOfTrolleybusOnRoute) {
             RouteNumber = routeNumber;
             InitialStop = initialStop;
@@ -34,13 +35,15 @@ namespace Lab1 {
         }
 
         public override string ToString() {
-            return string.Format($"Номер: {RouteNumber}\n" +
-                $"Назва: {Name}\n" +
-                $"Початкова зупинка: {InitialStop.Name}\n" +
-                $"Кінцева зупинка: {LastStop.Name}\n" +
-                $"К-сть тролейбусів на маршруті: {NumOfTrolleybus}\n" +
-                $"Тривалість проїзду маршруту: {JourneyTime.Value.Hour} год. {JourneyTime.Value.Minute}хв.\n" +
-                $"Список інвентарних номерів тролейбусів на маршруті: {string.Join(", ", InventoryNumsOfTrolleybusOnRoute)}\n");
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Номер: {RouteNumber}");
+            sb.AppendLine($"Назва: {Name}");
+            sb.AppendLine($"Початкова зупинка: {InitialStop.Name}");
+            sb.AppendLine($"Кінцева зупинка: {LastStop.Name}");
+            sb.AppendLine($"К-сть тролейбусів на маршруті: {NumOfTrolleybus}");
+            sb.AppendLine($"Тривалість проїзду маршруту: {JourneyTime.Hour} год. {JourneyTime.Minute}хв.");
+            sb.AppendLine($"Список інвентарних номерів тролейбусів на маршруті: {string.Join(", ", InventoryNumsOfTrolleybusOnRoute)}");
+            return sb.ToString();
         }
 
     }

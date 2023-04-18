@@ -59,106 +59,107 @@ namespace Lab1 {
                 new Passanger("Муха Ірина Павлівна", trolleybusStops[10], trolleybusStops[1], 1)
             };
 
+
             /// <summary>
             /// 1) Виведення всіх тролейбусних зупинок
             /// </summary>
             //GetAllTrolleybusStop(trolleybusStops);
-            
+
             /// <summary>
             /// 2) Виведення зупинок, назва яких починається на 'А'
             /// </summary>
             //GetTrStopWhereAIsFirst(trolleybusStops);
-            
+
             /// <summary>
             /// 3) Виведення переліку всіх маршрутів, відсортованих по тривалості руху у порядку зростання
             /// </summary>
             //GetRoutesSortedByJourneyTime(routes);
-            
+
             /// <summary>
             /// 4) Виведення пасажирів заданого тролейбусу
             /// </summary>
-            //GetTrPassangers(passangers, 3);
-            
+            //GetTrPassangers(passangers, 2);
+
             /// <summary>
             /// 5) Виведення ПІБ пасажира, назви його кінцевої зупинки та її адреси
             /// </summary>
-            //GetPassangersLastStopAndAdress(passangers, trolleybusStops);
-            
+            GetPassangersLastStopAndAdress(passangers, trolleybusStops);
+
             /// <summary>
             /// 6) Виведення даних про тролейбуси на яких їздила Муха Ірина Павлівна
             /// </summary>
-            //GetTrolleybusWhereWasMucha(passangers, trolleybuses);
-            
+            GetTrolleybusWhereWasMucha(passangers, trolleybuses);
+
             /// <summary>
             /// 7) Виведення кількості тролейбусів заданого кольору
             /// </summary>
-            //GetCountTrByColour(trolleybuses, "Червоний");
-            
+            GetCountTrByColour(trolleybuses, "Червоний");
+
             /// <summary>
             /// 8) Виведення даних про найтриваліший маршрут
             /// </summary>
-            //GetLongestRoute(routes);
-            
+            GetLongestRoute(routes);
+
             /// <summary>
             /// 9) Групування пасажирів по номеру тролейбуса
             /// </summary>
-            //GetGroupPassangerByTrNum(passangers);
-            
+            GetGroupPassangerByTrNum(passangers);
+
             /// <summary>
             /// 10) Виведення даних про зупинки без врахування заданої к-сті зупинок з кінця
             /// </summary>
-            //GetStopsWithoutLastNums(trolleybusStops, 10);
-            
+            GetStopsWithoutLastNums(trolleybusStops, 10);
+
             /// <summary>
             /// 11) Виведення першого в списку тролейбусу з інвентарним номером, який >= сумі номерів тролейбусів
             /// </summary>
-            //Task11(trolleybuses);
-            
+            Task11(trolleybuses);
+
             /// <summary>
             /// 12)Декартовий добуток пасажирів та маршрутів
             /// </summary>
-            //Task12(passangers, routes);
-            
+            Task12(passangers, routes);
+
             /// <summary>
             /// 13) Виведення ПІБ пасажирів зі списку
             /// </summary>
-            //Task13(passangers);
-            
+            Task13(passangers);
+
             /// <summary>
             /// 14) Перевірка чи є хтось з пасажирів хто прямумав до сільпо
             /// </summary>
-            //Task14(passangers);
-            
+            Task14(passangers);
+
             /// <summary>
             /// 15) Перевірка чи є задана зупинка в списку зупинок
             /// </summary>
-            //Task15(trolleybusStops, "Сільпо");
-            
+            Task15(trolleybusStops, "Сільпо");
+
             /// <summary>
             /// 16) Виведення пасажирів к-сть букв в ПІБ яких є >= мінімальної к-сті пасажирських місць із списку тролейбусів
             /// </summary>
-            //Task16(passangers, trolleybuses);
-            
+            Task16(passangers, trolleybuses);
+
             /// <summary>
             /// 17) Виведення пасажирів відсортованих по тривалості маршруту, яким вони рухалися у порядку зростання
             /// </summary>
-            //Task17(passangers, routes);
-            
+            Task17(passangers, routes);
+
             /// <summary>
             /// 18) Перевірка чи всі маршрути мають тривалість >= заданої кількості хвилин
             /// </summary>
-            //Task18(routes, 200);
-            
+            Task18(routes, 200);
+
             /// <summary>
             /// 19) Виведення тролейбусів які закріплені за маршрутами
             /// </summary>
-            //Task19(trolleybuses, routes);
-            
+            Task19(trolleybuses, routes);
+
             /// <summary>
             /// 20) Виведення пасажирів чий ПІБ закінчується на задану букву 
             /// </summary>
-            //Task20(passangers, 'ч');
-            
+            Task20(passangers, 'ч');
+
             /// <summary>
             /// 21) Згрупувати Маршрути по початковим зупинкам
             /// </summary>
