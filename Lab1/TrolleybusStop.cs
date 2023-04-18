@@ -14,8 +14,8 @@ namespace Lab1 {
             Address = address;
         }
         public override string ToString() {
-            return string.Format($"Зупинка: {Name}\n" +
-                $"Адреса: {Address} \n");
+            return string.Format(@$"Зупинка: {Name}\n
+                Адреса: {Address} \n");
         }
 
     }
