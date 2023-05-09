@@ -45,6 +45,5 @@ namespace Lab2 {
             sb.AppendLine($"Список інвентарних номерів тролейбусів на маршруті: {string.Join(", ", InventoryNumsOfTrolleybusOnRoute)}");
             return sb.ToString();
         }
-
     }
 }
